@@ -39,7 +39,7 @@ with open(pypoll_csv, "r") as csvfile:
 
 
 
-   
+#print results to terminal
 print("Election Results")
 print("-------------------------")
 print(f'Total votes: {vote_counter}')
@@ -51,3 +51,25 @@ for candidate in candidate_list:
 print('-------------------------')
 print(f'Winner: {winner_finder(vote_totals)}')
 print('-------------------------')
+
+#print results to analysis.txt file
+analysis_file = open(r"Analysis/analysis.txt", "w")
+analysis_file.write("\n")
+analysis_file.write("Election Results")
+analysis_file.write("\n")
+analysis_file.write("-------------------------")
+analysis_file.write("\n")
+analysis_file.write(f'Total votes: {vote_counter}')
+analysis_file.write("\n")
+analysis_file.write("-------------------------")
+analysis_file.write("\n")
+#prints the candidate names, percent of total votes earned, and number of votes earned
+for candidate in candidate_list:
+    percent_earned = vote_totals[candidate]/vote_counter * 100
+    analysis_file.write(f'{candidate}:  {percent_earned:.3f}% ({str(vote_totals[candidate])})')
+    analysis_file.write("\n")
+analysis_file.write('-------------------------')
+analysis_file.write("\n")
+analysis_file.write(f'Winner: {winner_finder(vote_totals)}')
+analysis_file.write("\n")
+analysis_file.write('-------------------------')
