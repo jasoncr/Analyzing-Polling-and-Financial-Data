@@ -57,16 +57,15 @@ with open(pybank_csv, "r") as csvfile:
     avg_differences = sum(differences)/len(differences)
     
     
-    
-
     #Analysis to terminal
     print("Financial Analysis")
     print("----------------------------")
     print(f"Total Months: {month_counter}")
-    print(f'Total ${total}')
-    print(f"Average Change: ${avg_differences:.2f}")
+    print(f'Total ${total}') #total profit/loss
+    print(f"Average Change: ${avg_differences:.2f}") #average change in profits/loss
     print(f'Greatest Increase in Profits: {months[profit_index]} (${great_profit})')
     print(f'Greatest Decrease in Profits: {months[loss_index]} (${great_loss})')
+
 
     #Analysis to analysis.txt in Analysis directory
     analysis_file = open(r"Analysis/analysis.txt", "w")
