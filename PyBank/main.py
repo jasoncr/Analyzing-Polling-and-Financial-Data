@@ -70,17 +70,11 @@ with open(pybank_csv, "r") as csvfile:
     #Analysis to analysis.txt in Analysis directory
     analysis_file = open(r"Analysis/analysis.txt", "w")
 
-    analysis_file.write("Financial Analysis")
-    analysis_file.write("\n") #new line
-    analysis_file.write("----------------------------")
-    analysis_file.write("\n")
-    analysis_file.write(f'Total Months: {month_counter}')
-    analysis_file.write("\n")
-    analysis_file.write(f'Total ${total}')
-    analysis_file.write("\n")
-    analysis_file.write(f"Average Change: ${avg_differences:.2f}")
-    analysis_file.write("\n")
-    analysis_file.write(f'Greatest Increase in Profits: {months[profit_index]} (${great_profit})')
-    analysis_file.write("\n")
+    analysis_file.write("Financial Analysis \n")
+    analysis_file.write("---------------------------- \n")
+    analysis_file.write(f'Total Months: {month_counter}\n')
+    analysis_file.write(f'Total ${total}\n')
+    analysis_file.write(f"Average Change: ${avg_differences:.2f}\n")
+    analysis_file.write(f'Greatest Increase in Profits: {months[profit_index]} (${great_profit})\n')
     analysis_file.write(f'Greatest Decrease in Profits: {months[loss_index]} (${great_loss})')    
     
