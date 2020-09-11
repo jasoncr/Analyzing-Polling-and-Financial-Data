@@ -1,6 +1,6 @@
 # python-challenge
 
-In this challenge I wanted to analyze the profits and loss data from a hypothetical company. I wanted to answer the following questions: 
+In first part of this challenge I wanted to analyze the profits and loss data from a hypothetical company. I wanted to answer the following questions: 
 
 -How many months were recorded?
 
@@ -12,16 +12,19 @@ In this challenge I wanted to analyze the profits and loss data from a hypotheti
 
 -What is the greatest decrease from one month to the next and when did that happen?.
 
-Therefore, I created a Python script that looped through the data and displayed the answers to these questions in a .txt file in my Analysis folder. Below is what that .txt file looks like. 
+Therefore, I created a Python script that looped through the data and displayed the answers to these questions in a .txt file in my Analysis folder. To run the script, use the terminal. Below is what that .txt file looks like. 
 
 ![Sample1](/PyBank/Analysis/03030.png)
 
-To run the script, use the terminal. 
 
+In the second part of this challenge, I am doing a similar procedure for a small rural town's voting ballot information. Here are my new set of questions to answer:
 
+-What is the total number of votes cast?
 
-Week 3 homework for bootcamp. Looking at 2 data sets. 
+-What is the canidate names, what percent of votes he/she won, and how many votes did he/she earn?
 
--The first set the sample bank profits/loss data and the drawn analysis from the month to month summaries.
+-Who won?
 
--The second is sample polling data and the drawn analysis from the voter information. 
+Just like the first part, I created a Python script and wrote the answers to those questions into a .txt file. Below is what the .txt file looks like. 
+
+![Sample1](/PyPoll/Analysis/104044.png)
