@@ -14,7 +14,7 @@ In this challenge I wanted to analyze the profits and loss data from a hypotheti
 
 Therefore, I created a Python script that looped through the data and displayed the answers to these questions in a .txt file in my Analysis folder. Below is what that .txt file looks like. 
 
-![Sample1](/PyBank/Analysis/images/03030.png)
+![Sample1](/PyBank/Analysis/03030.png)
 
 To run the script, use the terminal. 
 
