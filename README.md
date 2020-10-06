@@ -1,4 +1,4 @@
-# python-challenge
+# Analyzing-Polling-and-Financial-Data
 
 ### In first part of this challenge I wanted to analyze the profits and loss data from a hypothetical company. I wanted to answer the following questions: 
 
